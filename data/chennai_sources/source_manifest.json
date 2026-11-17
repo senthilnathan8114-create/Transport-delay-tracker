@@ -1,0 +1,168 @@
+{
+  "downloaded_at_utc": "2026-11-17T16:55:15.853230+00:00",
+  "city": "Chennai, Tamil Nadu, India",
+  "sources": {
+    "mtc_performance": {
+      "path": "data\\chennai_sources\\mtc_performance.csv",
+      "rows": 15,
+      "columns": [
+        "Sl No.",
+        "Item",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "missing_cells": 0,
+      "duplicate_rows": 0,
+      "file_size_bytes": 859,
+      "checks": {
+        "has_item_column": true,
+        "financial_year_columns": [
+          "2020-21",
+          "2021-22",
+          "2022-23",
+          "2023-24",
+          "2024-25",
+          "2025-26"
+        ],
+        "data_granularity": "annual aggregate fleet and operational indicators",
+        "usable_as_trip_delay_labels": false
+      },
+      "status": "available_and_validated",
+      "source_url": "https://data.opencity.in/dataset/c7bf200b-03e1-403f-99be-487d3c4a294a/resource/0c917fe2-aaef-4873-95f3-4da9e50620f3/download/0c917fe2-aaef-4873-95f3-4da9e50620f3.csv"
+    },
+    "cmrl_monthly_ridership": {
+      "path": "data\\chennai_sources\\cmrl_monthly_ridership.csv",
+      "rows": 39,
+      "columns": [
+        "Month",
+        "Closed Loop (Ridership)",
+        "Closed Loop %",
+        "QR Tickets (Ridership)",
+        "QR %",
+        "NCMC (Ridership)",
+        "NCMC %",
+        "Total Passenger Flow"
+      ],
+      "missing_cells": 0,
+      "duplicate_rows": 0,
+      "file_size_bytes": 3045,
+      "checks": {
+        "has_month_column": true,
+        "has_total_passenger_flow": true,
+        "data_granularity": "monthly aggregate passenger ridership",
+        "usable_as_train_delay_labels": false
+      },
+      "status": "available_and_validated",
+      "source_url": "https://data.opencity.in/dataset/118434fe-dd69-4dd3-a6a8-4c577326cc34/resource/c63ef5a0-e7d2-49b3-9c88-5ca5ce309fcf/download/cmrl-metro-ridership-2023-26.csv"
+    },
+    "chennai_unified_gtfs": {
+      "path": "data\\chennai_sources\\chennai_unified_gtfs.zip",
+      "tables": {
+        "agency.txt": {
+          "rows": 3,
+          "columns": [
+            "agency_id",
+            "agency_name",
+            "agency_url",
+            "agency_timezone",
+            "agency_phone",
+            "agency_lang",
+            "agency_fare_url",
+            "agency_email"
+          ]
+        },
+        "routes.txt": {
+          "rows": 5402,
+          "columns": [
+            "route_id",
+            "route_short_name",
+            "route_long_name",
+            "route_type",
+            "agency_id",
+            "route_desc",
+            "route_color",
+            "route_text_color"
+          ]
+        },
+        "stops.txt": {
+          "rows": 6542,
+          "columns": [
+            "stop_id",
+            "stop_name",
+            "stop_lat",
+            "stop_lon",
+            "stop_desc",
+            "zone_id",
+            "location_type",
+            "parent_station",
+            "platform_code",
+            "stop_code"
+          ]
+        },
+        "trips.txt": {
+          "rows": 48435,
+          "columns": [
+            "trip_id",
+            "route_id",
+            "service_id",
+            "direction_id",
+            "trip_headsign",
+            "shape_id"
+          ]
+        },
+        "stop_times.txt": {
+          "rows": 1389081,
+          "columns": [
+            "trip_id",
+            "arrival_time",
+            "departure_time",
+            "stop_id",
+            "stop_sequence"
+          ]
+        },
+        "calendar.txt": {
+          "rows": 12,
+          "columns": [
+            "service_id",
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday",
+            "start_date",
+            "end_date"
+          ]
+        },
+        "calendar_dates.txt": {
+          "rows": 4,
+          "columns": [
+            "date",
+            "service_id",
+            "exception_type"
+          ]
+        },
+        "shapes.txt": {
+          "rows": 4231,
+          "columns": [
+            "shape_id",
+            "shape_pt_lat",
+            "shape_pt_lon",
+            "shape_pt_sequence"
+          ]
+        }
+      },
+      "status": "available_and_extracted"
+    }
+  },
+  "limitations": [
+    "GTFS is scheduled service/network data, not actual observed delay history.",
+    "MTC performance is annual aggregate operational indicators, not trip-level delay labels.",
+    "CMRL monthly ridership is aggregate passenger volume, not train arrival punctuality."
+  ]
+}

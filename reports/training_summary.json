@@ -1,0 +1,16 @@
+{
+  "rows": 2000,
+  "columns": 24,
+  "train_rows": 1600,
+  "test_rows": 400,
+  "date_start": "2023-01-01 05:00:00",
+  "date_end": "2023-01-22 00:45:00",
+  "missing_event_type": 1173,
+  "duplicate_rows": 0,
+  "target_mean": 13.318,
+  "target_std": 9.289726880417765,
+  "selected_regression_model": "Median Baseline",
+  "best_machine_learning_model": "Gradient Boosting",
+  "delayed_positive_rate_test": 0.7675,
+  "label_matches_delay_gt_5": true
+}

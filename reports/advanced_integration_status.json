@@ -1,0 +1,9 @@
+{
+  "openweather_current_api": "integrated; requires user API key",
+  "interactive_weather_analysis": "integrated",
+  "shap_tree_explainer": "integrated and smoke-tested",
+  "historical_weather_enrichment": "integrated; requires verified station coordinates",
+  "authentic_transport_data": "not yet supplied; operator-specific data needed",
+  "current_selected_regression_model": "Median Baseline",
+  "warning": "The provided Kaggle CSV is only 2,000 trips over 22 days and appears synthetic; no accuracy gain is claimed."
+}

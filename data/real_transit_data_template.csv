@@ -1,0 +1,1 @@
+trip_id,service_datetime,transport_type,route_id,origin_station,destination_station,scheduled_departure,scheduled_arrival,actual_departure,actual_arrival,latitude,longitude,weather_condition,temperature_C,humidity_percent,wind_speed_kmh,precipitation_mm,event_type,event_attendance_est,traffic_congestion_index,holiday,peak_hour,weekday,season
